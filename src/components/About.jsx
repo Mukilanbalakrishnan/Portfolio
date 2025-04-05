@@ -1,7 +1,7 @@
 
 import React from 'react';
 import '../App.css';
-import { services } from "../constants/constants";
+import { services } from "../constants/index";
 import ButtonLink from './ButtonLink';
 import Footer from './Footer';
 import ServiceCard from './ServiceCard';
