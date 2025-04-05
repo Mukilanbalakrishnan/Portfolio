@@ -46,3 +46,19 @@ export const services = [
   { title: "Java", icon: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg", stars: 3 }
 ];
 
+
+export const experiences = [
+  {
+      'company': 'StaraKit',
+      'role': 'Full-Stack Developer',
+      'duration': 'April 2024 - June 2024',
+      'logo': 'https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/e5gz1yggdy8sc1umna3e',
+      'points': [
+          'Involved in dynamic contributions to web and mobile📱 development projects, actively influencing and improving project outcomes.',
+          'Developed multiple shared components to simplify tasks for fellow developers, boosting efficiency and teamwork.',
+          'Enhanced product performance through significant contributions to backend development, optimizing essential components for improved efficiency 📈.',
+          'Implemented data security for the company’s product to provide role-based access control ⚙️.'
+      ],
+      'url': 'https://inncircles.com/#home',
+  },
+]
