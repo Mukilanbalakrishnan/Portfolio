@@ -46,7 +46,7 @@ export const services = [
   { title: "Java", icon: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg", stars: 3 }
 ];
 
-
+export const name = 'Mukilan';
 export const experiences = [
   {
       'company': 'StaraKit',
