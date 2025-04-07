@@ -2,153 +2,11 @@
 
 
 
-// // import React from "react";
-// import vpn from '../assets/vpn.png';
-// import dashboard from '../assets/dashboard.png';
-// // import Footer from './Footer';
-// import Tilt from 'react-parallax-tilt';
-// import React, { useState } from "react";
-
-
-// const ProjectCard = ({ title, description, git, technologies }) => {
-//     const [isExpanded, setIsExpanded] = useState(false);
-  
-//     return (
-//       <Tilt
-//         glareEnable={true}
-//         glareMaxOpacity={0.4}
-//         glareColor="#ffffff"
-//         glarePosition="top"
-//         tiltMaxAngleX={10}
-//         tiltMaxAngleY={10}
-//         className={`relative transition-all duration-500 
-//         ${isExpanded ? "w-[400px] sm:w-[450px] md:w-[500px]" : "w-[220px] sm:w-[250px] md:w-[280px]"}`}
-//       >
-//         <div 
-//           className={`relative group p-[2px] rounded-lg border-[2px] border-transparent 
-//           ${isExpanded ? "shadow-[0_0_20px_#ffcc00] border-gold-500" : "shadow-[0_0_10px_#00bfff]"}
-//           transition-all duration-500`}
-//           onClick={() => setIsExpanded(!isExpanded)}
-//         >
-          
-//           {/* Show image only when expanded */}
-//           {isExpanded && title === "Digital Canteen" && (
-//             <a href="#">
-//               <img className="w-full h-[150px] object-cover rounded-t-lg" src={vpn} alt={title} />
-//             </a>
-//           )}
-//           {isExpanded && title === "Dashboard" && (
-//             <a href="#">
-//               <img className="w-full h-[150px] object-cover rounded-t-lg" src={dashboard} alt={title} />
-//             </a>
-//           )}
-  
-//           {/* Content */}
-//           <div className="p-3">
-//             <h5 className="text-lg font-bold text-white bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-500">
-//               {title}
-//             </h5>
-//             <p className={`text-xs text-gray-300 transition-all duration-500 ${isExpanded ? "text-sm" : "line-clamp-2"}`}>
-//               {description}
-//             </p>
-//           </div>
-  
-//           {/* Tags & GitHub */}
-//           <div className="m-2 flex justify-between">
-//             <div className="flex flex-wrap gap-2 pl-2">
-//               {technologies.map((tag, index) => (
-//                 <p key={`${index}-${tag}`} className="text-xs text-blue-500">
-//                   #{tag}
-//                 </p>
-//               ))}
-//             </div>
-//             <a
-//               href={git}
-//               className="text-red-300 border border-gray-200 rounded-lg shadow p-1 hover:text-green-500 duration-300"
-//             >
-//               GitHub
-//             </a>
-//           </div>
-//         </div>
-//       </Tilt>
-//     );
-//   };
-  
-// //   export default ProjectCard;
-  
-  
-
-
-// const Projects = () => {
-//     return (
-//         <div className="bg-black min-h-screen py-20 px-5">
-//             <h1 className="text-4xl sm:text-5xl font-bold text-center text-white mb-10 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-//                 My Projects 🚀
-//             </h1>
-
-//             <div className="flex flex-wrap gap-10 justify-center items-center">
-//                 {project.map((item, index) => (
-//                     <ProjectCard
-//                         key={index}
-//                         image={item.image}
-//                         title={item.title}
-//                         description={item.description}
-//                         git={item.git}
-//                         technologies={item.technologies}
-//                     />
-//                 ))}
-//             </div>
-
-//             {/* <Footer />   */}
-//         </div>
-//     );
-// };
-
-// export const project = [
-//     {
-//         title: 'Dashboard',
-//         description: 'A powerful dashboard designed to manage events, tasks, and finances seamlessly 🚀.',
-//         image: dashboard,
-//         git: 'https://github.com/nithingooud/CoPeople',
-//         technologies: ['Figma']
-//     },
-//     {
-//         title: 'Digital Canteen',
-//         description: 'A shopping-like app for hostel students, enabling purchases through a coin-based system 🚀.',
-//         image: vpn,
-//         git: "https://github.com/Boopathy133/Shop.git",
-//         technologies: ['React JS', 'Tailwind CSS', 'Node.js', 'MongoDB']
-//     },
-//     {
-//         title: 'Task Manager',
-//         description: 'An intuitive task management app to track and prioritize daily activities efficiently 🚀.',
-//         image: vpn,
-//         git: "https://github.com/example/task-manager",
-//         technologies: ['React JS', 'Node.js', 'MongoDB']
-//     },
-//     {
-//         title: 'Portfolio Website',
-//         description: 'A modern portfolio showcasing my skills, projects, and experiences 🚀.',
-//         image: dashboard,
-//         git: "https://github.com/example/portfolio",
-//         technologies: ['React JS', 'Tailwind CSS', 'Framer Motion']
-//     },
-//     {
-//         title: 'Portfolio Website',
-//         description: 'A modern portfolio showcasing my skills, projects, and experiences 🚀.',
-//         image: dashboard,
-//         git: "https://github.com/example/portfolio",
-//         technologies: ['React JS', 'Tailwind CSS', 'Framer Motion']
-//     }
-// ];
-
-// export default Projects;
-
-
-
 import React, { useState } from "react";
 import commingsoon1 from "../assets/commingsoon1.png";
 import dashboard from "../assets/dashboard.png";
+import Ecommerce from "../assets/Ecommerce.png";
+import collabrative from "../assets/collabrative.png";
 import Tilt from "react-parallax-tilt";
 
 const ProjectCard = ({ title, description, git, technologies, isActive, onClick }) => {
@@ -172,15 +30,40 @@ const ProjectCard = ({ title, description, git, technologies, isActive, onClick 
         {/* Show image only when expanded */}
         {/* import digitalcanteen from "../assets/digitalcanteen.jpg"; */}
 
-{isActive && title === "Digital-Canteen" && (
-  <a href="#">
-    <img className="w-full h-[150px] object-cover rounded-t-lg" src={commingsoon1} alt={title} />
-  </a>
-)}
+        {isActive && title === "Digital-Canteen" && (
+          <a href="#">
+            <img className="w-full h-[150px] object-cover rounded-t-lg" src={commingsoon1} alt={title} />
+          </a>
+        )}
 
         {isActive && title === "Dashboard" && (
           <a href="#">
             <img className="w-full h-[150px] object-cover rounded-t-lg" src={dashboard} alt={title} />
+          </a>
+        )}
+
+        {isActive && title === "Bus Search System" && (
+          <a href="#">
+            <img className="w-full h-[150px] object-cover rounded-t-lg" src={commingsoon1} alt={title} />
+          </a>
+        )}
+
+
+        {isActive && title === "E-commerce for Cloth " && (
+          <a href="#">
+            <img className="w-full h-[150px] object-cover rounded-t-lg" src={Ecommerce} alt={title} />
+          </a>
+        )}
+
+
+        {isActive && title === "Online Assessment & Learning Platform" && (
+          <a href="#">
+            <img className="w-full h-[150px] object-cover rounded-t-lg" src={commingsoon1} alt={title} />
+          </a>
+        )}
+        {isActive && title === "Figma Collaborative Tool Clone" && (
+          <a href="#">
+            <img className="w-full h-[150px] object-cover rounded-t-lg" src={collabrative} alt={title} />
           </a>
         )}
 
@@ -205,7 +88,7 @@ const ProjectCard = ({ title, description, git, technologies, isActive, onClick 
           </div>
           <a
             href={git}
-            className="text-red-300 border border-gray-200 rounded-lg shadow p-1 hover:text-green-500 duration-300"
+            className="text-red-300 border border-gray-200 rounded mb-1 shadow p-1 hover:text-green-500 duration-300"
           >
             GitHub
           </a>
@@ -254,19 +137,38 @@ export const project = [
     git: "https://github.com/Mukilanbalakrishnan/Digital-Canteen.git", // Replace with your actual GitHub link
     technologies: ["ReactJS", "Node.js", "MongoDB", "Express", "xlsx"],
   },
-  {
-    title: "AI-Based Assessment Tool",
-    description: "An interactive online quiz platform that allows users to assess their knowledge in various subjects like Python and JavaScript. The tool provides real-time results, visualized through a pie chart, and adapts to different devices for a seamless experience. It's built with dynamic content loading, secure authentication, and an engaging interface. 🚀",
-    git: "https://github.com/yourusername/AI-Assessment-Tool.git", // Replace with your actual GitHub link
-    technologies: ["Flask", "JavaScript", "Chart.js", "Bootstrap",  "HTML5", "CSS3"]
-},
 
   {
-    title: "Portfolio Website",
-    description: "A modern portfolio showcasing my skills, projects, and experiences 🚀.",
-    git: "https://github.com/example/portfolio",
-    technologies: ["React JS", "Tailwind CSS", "Framer Motion"],
+    title: "Bus Search System",
+    description: "A user-friendly React-based application designed to help users search for buses between two locations in real-time. The system features intelligent dropdowns that auto-suggest and auto-fill locations, making the search faster and more intuitive. It filters bus options based on departure and arrival points and displays upcoming buses with relevant details. Powered by MongoDB Atlas, it ensures live data storage and smooth performance across devices. 🚀",
+    git: "https://github.com/Mukilanbalakrishnan/Bus-Search-System.git", // Replace with your actual GitHub link
+    technologies: ["ReactJS", "JavaScript", "Tailwind CSS", "MongoDB Atlas"]
   },
+
+
+
+  {
+    title: "E-commerce for Cloth ",
+    description: "Developed a fully functional e-commerce platform for clothing using React, offering a smooth and responsive shopping experience. Integrated Node.js and Express.js for handling backend operations and API routing. Leveraged MongoDB Atlas for secure, cloud-based data management including product listings, user data, and orders. Designed with modern UI/UX principles and a component-based architecture, ensuring accessibility, performance, and cross-device compatibility. 🚀",
+    git: "https://github.com/Mukilanbalakrishnan/E-Commerce-Website.git", // Replace with your actual GitHub link
+    technologies: ["React", "Node.js", "MongoDB", "JavaScript", "REST API", "Git"]
+  },
+  {
+    title: "Online Assessment & Learning Platform",
+    description: "An interactive and scalable e-learning platform that offers module-based learning in subjects like Python and JavaScript. Each module contains three progressive levels — Basic, Intermediate, and Advanced — with dynamic tests after each stage. Users can only unlock the next level upon passing the previous test. The app tracks user progress, stores it in localStorage, and gives intelligent feedback based on quiz performance. Designed using React.js and Tailwind CSS, the system integrates a Node.js + MongoDB backend to manage user data and content delivery. 🚀",
+    git: "https://github.com/Mukilanbalakrishnan/Online-Assesment.git", // Replace with your actual GitHub link
+    technologies: ["ReactJS", "Tailwind CSS", "Axios", "Node.js", "Express.js", "MongoDB"]
+  },
+
+  {
+    title: "Figma Collaborative Tool Clone",
+    description: "Recreated a collaborative design platform inspired by Figma, supporting real-time multi-user interactions. The project replicates key UI components such as the canvas, toolbar, layers panel, and property editor with precise attention to design systems and user experience. Implemented smooth drag-and-drop functionality, responsive layouts, and intuitive navigation using Figma’s powerful design features. This clone showcases expertise in component structuring, auto layout, and prototyping within a scalable design framework. 🚀",
+    git: "https://github.com/Mukilanbalakrishnan/Project-2-CoderOne.git", // Replace with your actual Figma prototype link
+    technologies: ["Figma", "Auto Layout", "Components", "Prototyping"]
+  }
+
+
+
 ];
 
 export default Projects;

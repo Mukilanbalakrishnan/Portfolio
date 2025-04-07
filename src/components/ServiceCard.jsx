@@ -1,31 +1,3 @@
-// import React, { useState } from "react";
-// import "../App.css";
-
-// const ServiceCard = ({ service }) => {
-//   const [flipped, setFlipped] = useState(false);
-
-//   return (
-//     <div className="card-container" onClick={() => setFlipped(!flipped)}>
-//       <div className={`card ${flipped ? "flipped" : ""}`}>
-//         {/* Front Side */}
-//         <div className="card-face front">
-//           <img src={service.image} alt={service.title} className="card-icon" />
-//           <h3 className="card-title">{service.title}</h3>
-//         </div>
-
-//         {/* Back Side */}
-//         <div className="card-face back">
-//           <h3 className="card-title">{service.title}</h3>
-//           <div className="stars">{service.stars}</div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ServiceCard;
-
-
 
 import React from "react";
 
